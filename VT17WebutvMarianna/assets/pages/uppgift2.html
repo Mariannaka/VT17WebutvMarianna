@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Facebookcopy</title>
+<style>
+p{
+margin-top: -15px;
+}
+</style>
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<header> <!-- here i replaced nested (div) tag with one (header) tag, wich collects everything that should appear as one block in the top of the web site--> <!-- here we could use nav "navigator" tag, but the font will get smaller and the content will not appear as it should be as a top/header-->
+<h1>Facebookcopy</h1>
+<a href="#home">Home</a>
+<a href="#profile">Profile</a>
+<a href="#Settings">Settings</a>
+</header>
+
+<hr>
+
+<main><!-- replacing an ordinary (div) tag with (main) helps to know that what ever is located in between (main) tags appears in the middle or main section of our web site, and there should NOT be more than one main tag-->
+
+<section> <!-- a new section -->
+<h2>MusikLover56's status</h2>
+<p>Har "We are the champions - Queen" gjorts om!? &#128347; <date><span style="color:red">2010-02-07 10:32</span></date></p> <!-- we can use (span) tag to add color to its content, other wise the content will be similar to the rest of the line or will appear in black colored font --> 
+<p>
+Jag lyssnade på låten We are the Champions by Queen häromdagen och sjöng med, men när dem sjöng "No time for losers, cause we are the Champions" så avslutade jag stycket med "... of the world" men det gjorde dem inte låten, har den gjorts om?? är säker på att "of the world" ska vara med!
+</p>
+</section>
+
+<section> <!-- i prefered to use (section) for the bigger blocks to set appart them like i did with the previous (section) tag, as in these bigger blocks we can use (div) if we want to divide them into smaller blocks so we skip having so many nested div tags--><!-- we should be aaware of using nested (secction) makes inner h1 font size smaller than the extern h1 -->
+<h3>Comments</h3>
+
+<div>
+<h4>Cat_trainer31's post:</h4>
+<p>
+Du har nog fel.. lyssna om  &#128347; <span style="color:red"> 2010-02-07 20:59</span> <!-- here i did not use (date) tag as i did previously in line 28, as this tag do not show any diferent formating on the web site --> <!-- we can use span tag to add color to its content, other wise the content will be similar to the rest of the line or will appear in black colored font -->
+</p>
+</div>
+
+<div>
+<h4>Realist11's post:</h4>
+<p>
+Du har upptäckt Mandela effecten, läs mer här <a href="https://www.buzzfeed.com/christopherhudspeth/crazy-examples-of-the-mandela-effect-that-will-make-you-ques?utm_term=.jqwGYwq6v1#.qePa790Nvl">Mandela effecten</a> &#128347; <span style="color:red">2010-02-08 05:37</span>
+</p>
+</div>
+
+</section>
+</main>
+
+<hr>
+
+<footer> <!-- I replaced div tag with footer tag which is new in html5 version, it defines the lower section of the web site -->
+<small>This has nothing to do with the real Facebook other than showing a simple HTML element semantic example with the use of a typical facebook post entry <br>
+<a href="https://www.facebook.com/">Click here to find the original facebook</a></small>
+</footer>
+</body>
+</html>
