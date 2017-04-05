@@ -5,13 +5,13 @@ var click-pnumber = document.getElementById ("click-pnumber");
 var click-year = document.getElementById ("click-year");
 var click-numbers = document.getElementById ("click-numbers");
 
-click-numbers.addEventListener("click", checkPnumber);
-click-year.addEventListener("click", isLeapYear);
-click-numbers.addEventListener("click", calcNumbers);
+click-numbers.addEventListener("input", checkPnumber);
+click-year.addEventListener("input", isLeapYear); //try input action
+click-numbers.addEventListener("input", calcNumbers);
 
-function.isLeapYear (){
-
-	var leapYear= parseInt(document.getElementById("year".value));
+function.isLeapYear (e){
+	e.preventDefault();
+	var leapYear= parseInt(document.getElementById("year").value);
 
 	if (document.getElementById("year".value==" ")) {
 		alert ("Enter a year!");
@@ -33,19 +33,34 @@ function.isLeapYear (){
 	}
 }
 
-function.checkPnumber (){
+function.checkPnumber (e){
+		e.preventDefault(); 
 
 
 }
 
 
-function.calcNumbers (){
-	var numbers = parseInt(document.getElementById("numbers".value));
+function.calcNumbers (e){
+		e.preventDefault();
+		var numbers = (document.getElementById("numbers").value);
+		var total=0;
 
 	for (int i=0; i<numbers.length; i++) {
 		var numLoc= numbers.charAt(i);
-		var total= numLoc++;
+		 total+= numLoc;
 	} alert ('The sum of your numbers is: ' + total);
 
-
 }
+
+
+function calcSum(e){
+		e.preventDefault();
+		var sum = 0;
+		var input = document.getElementById("numberSum").value; //sum
+		while(input){
+			sum += input%10;
+			input = Math.floor(input/10);
+		}
+
+		return document.getElementById("numberSumResult").innerHTML = sum;
+	}

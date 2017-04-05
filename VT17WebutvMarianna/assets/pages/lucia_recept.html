@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lussekatter recept</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../style/examination.css">
+</head>
+<body>
+<header>
+	<h2>Så här bakar du...</h2>
+</header>
+
+<aside id="second_page_aside">
+	<nav>
+		<h3>Välj portion: </h3>
+  <input list="portions" name="portions" id="porstions_list" >
+  <datalist id="portions" >
+    <option value="20 st">
+    <option value="40 st">
+    <option value="60 st">
+    <option value="80 st">
+  </datalist>
+  <input type="submit" value="Välj" id="select_button">
+
+  <ul id="st20_portion">
+  	<li>25 g (0.5 pkt) jäst för söta degar</li>
+	<li>0.5 g (1 frp à 0.25 g) saffran</li>
+	<li>75 g smör/eller  150 g margarin</li>
+	<li>2.5 dl mjölk</li>
+	<li>0.5 burk à 250 g kvarg (valfri fetthalt)</li>
+	<li>1 st ägg</li>
+	<li>0.5 tsk salt</li>
+	<li>0.75-1.5 dl strösocker</li>
+	<li>ca 8 dl vetemjöl</li>
+	<li>ca 0.5 dl russin</li>
+  </ul>
+
+  <ul id="st40_portion">
+  	<li>50 g (1 pkt) jäst för söta degar</li>
+	<li>1 g (2 frp à 0.5 g) saffran</li>
+	<li>150 g smör/eller  150 g margarin</li>
+	<li>5 dl mjölk</li>
+	<li>1 burk à 500 g kvarg (valfri fetthalt)</li>
+	<li>1 st ägg</li>
+	<li>0.5 tsk salt</li>
+	<li>1.5-3 dl strösocker</li>
+	<li>ca 17 dl vetemjöl</li>
+	<li>ca 1 dl russin</li>
+  </ul>
+
+  <ul id="st60_portion">
+  	<li>75 g (1.5 pkt) jäst för söta degar</li>
+	<li>1,5 g (3 frp à 1 g) saffran</li>
+	<li>175 g smör/eller  175 g margarin</li>
+	<li>7.5 dl mjölk</li>
+	<li>1.5 burk à 750 g kvarg (valfri fetthalt)</li>
+	<li>1 st ägg</li>
+	<li>1 tsk salt</li>
+	<li>3-4.5 dl strösocker</li>
+	<li>ca 25 dl vetemjöl</li>
+	<li>ca 1.5 dl russin</li>
+  </ul>
+
+  <ul id="st80_portion">
+  	<li>100 g (2 pkt) jäst för söta degar</li>
+	<li>2 g (4 frp à 1 g) saffran</li>
+	<li>300 g smör/eller  300 g margarin</li>
+	<li>10 dl mjölk</li>
+	<li>2 burk à 1000 g kvarg (valfri fetthalt)</li>
+	<li>2 st ägg</li>
+	<li>1 tsk salt</li>
+	<li>3-6 dl strösocker</li>
+	<li>ca 35 dl vetemjöl</li>
+	<li>ca 2 dl russin</li>
+  </ul>
+	</nav>
+</aside>
+
+<main id="second_page_main">
+	<p><b>1.Fördeg </b><br>
+		Se till att alla ingredienser till fördegen är rumsvarma. Blanda ihop mjölk, vetemjöl, jäst, socker och saffran på låg effekt i köksmaskinen i 15 min, låt jäsa övertäckt i ca 30 min. <br>
+		<b>2.Efter jäsning </b><br>
+		Tillsätt vetemjöl och salt till fördegen och bearbeta väl till en seg och elastisk deg.<br>
+		3.Knåda in rumstempererat smör i degen, lite i taget.<br>
+
+<figure>
+		<img width="300px" height="200px" src="../resource/baka_lucia.jpg">
+		 <figcaption><b>gör som visas på bilden</b></figcaption>
+</figure>
+		<p>
+		4.Forma degen till lussebullar, dekorera med russin, lägg på plåt med bakplåtspapper och låt jäsa cirka 1-2 timmar beroende på om ni har kallt degspad eller rumsvarmt. <br>
+		5.Grädda lussekatterna i 210 grader varmluft i ca 5-8 minuter, pensla med uppvispat ägg efter bakningen.<br>
+		</p>
+		<br>
+		<span class="rating">
+  
+    <input type="radio" id="star5" name="rating" value="5" onclick="functionrait(this.value)" /><label for="star5">5</label>
+    <input type="radio" id="star4" name="rating" value="4" onclick="functionrait(this.value)"/><label for="star4">4</label>
+    <input type="radio" id="star3" name="rating" value="3" onclick="functionrait(this.value)"/><label for="star3">3</label>
+    <input type="radio" id="star2" name="rating" value="2" onclick="functionrait(this.value)"/><label for="star2">2</label>
+    <input type="radio" id="star1" name="rating" value="1" onclick="functionrait(this.value)"/><label for="star1">1</label>
+</span>
+
+</main>
+<footer>
+	<p> &copy; Mariannas recept 2017</p>
+</footer>
+<script type="text/javascript" src="../script/examination.js"></script>
+</body>
+</html>

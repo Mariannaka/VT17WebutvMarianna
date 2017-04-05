@@ -1,0 +1,138 @@
+body {
+	background-image: url("../resource/cook_background.jpg");
+}
+
+header {
+	border-bottom: 10px solid #996633;
+}
+
+figure {
+	margin-left: 0px;
+	text-align: center;
+}
+
+footer {
+	position: all;
+	background-color: #996633;
+	color: white;
+	text-align: center;
+	padding: 7px;
+	margin-top: 100px;
+	clear: both;
+}
+
+main {
+	text-align: center;
+	width: 500px;
+	margin-left: 500px;
+	font-size: 20px;
+	font-family: cursive;
+}
+
+#button1 {
+	background-color: #ffff1a;
+	font-size: 15px;
+	margin: 25px;
+	padding: 15px;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 10%;
+	text-align: center;
+	text-decoration: none;
+}
+
+ //second pages CSS
+
+body {
+	background-image: url("../resource/cook_background.jpg");
+}
+ h2 {
+ 		font-family: cursive;
+ 	}
+
+ ul {
+ 	font-weight: bold;
+ 	font-size: 20px;
+ }
+
+#second_page_aside {
+		overflow: hidden;
+		background-color: pink;
+		float: left;
+		margin: 25px;
+}
+
+
+#st20_portion {
+	background-color: white;
+}
+
+#st40_portion {
+	background-color: white;
+	display: none;
+}
+
+#st60_portion {
+	background-color: white;
+	display: none;
+}
+
+#st80_portion {
+	background-color: white;
+	display: none;
+}
+
+
+#second_page_main {
+	background-color: white;
+	max-width: 100%;
+	margin-left: 100px;
+	padding: 20px;
+	overflow: hidden;
+	border: 5px solid #00767C;
+	float: left;
+	text-align: left;
+	width: 700px;
+	overflow: hidden;
+}
+
+.rating {
+	float: left;
+   text-align: center;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+label:hover {
+	color: yellow;
+	transform: scale(2);
+}
