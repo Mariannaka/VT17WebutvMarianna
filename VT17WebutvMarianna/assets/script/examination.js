@@ -1,52 +1,32 @@
-//function openWin() {
-  //  window.open("../pages/lucia_recept.html");
-//}
 
-//var portions_list= document.getElemenetById("portions_list");
-//portions_list.addEventListener("input", changePortion);
+document.getElementById("myValue").addEventListener("input", getOption);
+var button2 = document.getElementById("button2");
+var one = parseFloat(document.getElementById("one").innerText);
+var two = parseFloat(document.getElementById("two").innerHTML);
+var three = parseFloat(document.getElementById("three").innerHTML);
+var four = parseFloat(document.getElementById("four").innerHTML);
+var five = parseFloat(document.getElementById("five").innerHTML);
+var six = parseFloat(document.getElementById("six").innerHTML);
+var seven = parseFloat(document.getElementById("seven").innerHTML);
 
-//var select_button= document.getElemenetById("select_button");
-//select_button.addEventListener("click", function());
 
+function getOption() {
+    var myValue = document.getElementById("myValue").value;
 
-window.onload = displayLoader();
+	spanOne = (myValue/40) * one;
+	spanTwo = (myValue/40) * two;
+	spanThree = (myValue/40) * three;
+	spanFour = (myValue/40) * four;
+	spanFive = (myValue/40) * five;
+	spanSix = (myValue/40) * six;
+	spanSeven = (myValue/40) * seven;
 
-function displayLoader(){
-
-    var xhttp = new XMLHttpRequest();
-
-    xhttp.onreadystatechange = function (){
-
-        if(this.readyState === 4 && this.status === 200){
-            var json = JSON.parse(this.responseText);
-
-            var ratingtofixed = json.rating.toFixed(3);
-            document.getElementById("votesmessage").innerText = "Recipe: " + json.recipe + ". Votes: " + json.votes + " Rating:  " + ratingtofixed;
-        }
-    }
-
-    xhttp.open("GET",
-                                                "https://edu.oscarb.se/sjk15/api/recipe/?api_key=0c964dd5d9fb9898&recipe=lussekatter",
-                                                true);
-
-    xhttp.send();
+	document.getElementById("one").innerHTML = spanOne;
+	document.getElementById("two").innerHTML = spanTwo;
+	document.getElementById("three").innerHTML = spanThree;
+	document.getElementById("four").innerHTML = spanFour;
+	document.getElementById("five").innerHTML = spanFive;
+	document.getElementById("six").innerHTML = spanSix;
+	document.getElementById("seven").innerHTML = spanSeven;
 }
 
-function functionrait(int) {
-
-    xmlhttp=new XMLHttpRequest();
-
-    xmlhttp.onreadystatechange=function() {
-        if (this.readyState==4 && this.status==200) {
-            displayLoader();
-            display(int);
-            localStorage.data = "votes is: "+int;
-        }
-    }
-    xmlhttp.open("GET","https://edu.oscarb.se/sjk15/api/recipe/?api_key=0c964dd5d9fb9898&recipe=lussekatter&rating="+int,true);
-    xmlhttp.send();
-
-}
-function display(value){
-    document.getElementById("uservotes").innerText = "Your votes is: " + value;
-}

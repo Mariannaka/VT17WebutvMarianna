@@ -2,8 +2,26 @@ body {
 	background-image: url("../resource/cook_background.jpg");
 }
 
-header {
-	border-bottom: 10px solid #996633;
+.nav {
+	text-align: center;
+	background-color: #996633;
+	color: white;
+	text-align: center;
+	padding: 7px;
+}
+
+.nav a {
+	color: white ;
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: yellow;
+	}
+
+
+h2 {
+	text-align: center;
 }
 
 figure {
@@ -17,31 +35,56 @@ footer {
 	color: white;
 	text-align: center;
 	padding: 7px;
-	margin-top: 100px;
 	clear: both;
 }
 
 main {
 	text-align: center;
 	width: 500px;
-	margin-left: 500px;
 	font-size: 20px;
 	font-family: cursive;
+	margin: 0 auto;
 }
 
-#button1 {
+#button {
 	background-color: #ffff1a;
 	font-size: 15px;
-	margin: 25px;
 	padding: 15px;
 	cursor: pointer;
-	display: inline-block;
 	border-radius: 10%;
+	display: inline-block;
 	text-align: center;
 	text-decoration: none;
 }
 
- //second pages CSS
+///////////////////////////////////////////////////////////////////
+
+ //second page CSS
+
+.container {
+	display: flex;  
+	flex-flow: row wrap;
+	text-align: center;
+}
+
+.container > * {
+	padding: 25px;
+	flex: 1 100%;
+}
+
+.main {
+	text-align: left;
+	background-color: #f9e1a7;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-left: 20px;
+	overflow: hidden;
+	border: 5px solid #00767C;
+	float: left;
+	text-align: left;
+	max-width: 700px;
+	overflow: hidden;
+}
 
 body {
 	background-image: url("../resource/cook_background.jpg");
@@ -55,50 +98,27 @@ body {
  	font-size: 20px;
  }
 
+ li {
+ 	margin-left: -15px;
+ }
+
 #second_page_aside {
 		overflow: hidden;
-		background-color: pink;
+		background-color: #f7ae6f;
 		float: left;
-		margin: 25px;
+		margin: 0 auto;
 }
 
-
-#st20_portion {
-	background-color: white;
-}
-
-#st40_portion {
-	background-color: white;
-	display: none;
-}
-
-#st60_portion {
-	background-color: white;
-	display: none;
-}
-
-#st80_portion {
-	background-color: white;
-	display: none;
-}
-
-
-#second_page_main {
-	background-color: white;
-	max-width: 100%;
-	margin-left: 100px;
-	padding: 20px;
-	overflow: hidden;
-	border: 5px solid #00767C;
+.side-nav {
+	margin: 0px auto;
+	max-width: 290px;
 	float: left;
-	text-align: left;
-	width: 700px;
-	overflow: hidden;
 }
+
 
 .rating {
 	float: left;
-   text-align: center;
+	text-align: center;
 }
 
 /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
@@ -109,6 +129,7 @@ body {
     top:-9999px;
     clip:rect(0,0,0,0);
 }
+
 
 .rating:not(:checked) > label {
     float:right;
@@ -124,7 +145,7 @@ body {
 }
 
 .rating:not(:checked) > label:before {
-    content: '★ ';
+    content: '★';
 }
 
 .rating > input:checked ~ label {
@@ -133,6 +154,17 @@ body {
 }
 
 label:hover {
+	background-color: yellow
 	color: yellow;
 	transform: scale(2);
 }
+
+
+ .button {
+ 	-webkit-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    text-align: center;
+ }
+
